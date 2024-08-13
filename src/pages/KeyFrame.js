@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Placeholder, { PlaceholderItem } from "./KeyFrame/Placeholder";
+import Input from "./KeyFrame/Input";
 
 const A = styled(PlaceholderItem)`
     width: 60px;
@@ -22,6 +23,7 @@ const KeyFrame = () => {
                 <B />
                 <C />
             </Placeholder>
+            <Input loading />
         </div>
     );
 };
