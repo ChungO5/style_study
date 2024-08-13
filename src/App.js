@@ -7,6 +7,7 @@ import Dynamic from "./pages/Dynamic";
 import InputComponent from "./pages/InputComponent";
 import Inheritance from "./pages/Inheritance";
 import SearchPage from "./pages/SearchPage";
+import LoginPage from "./pages/LoginPage";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/input" element={<InputComponent />} />
                 <Route path="/inheritance" element={<Inheritance />} />
                 <Route path="/searchInput" element={<SearchPage />} />
+                <Route path="/login" element={<LoginPage />} />
             </Routes>
         </BrowserRouter>
     );
