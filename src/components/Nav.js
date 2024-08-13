@@ -26,6 +26,7 @@ const Nav = () => {
             <NavLink to="/inheritance">Inheritance</NavLink>
             <NavLink to="/searchInput">SearchInput</NavLink>
             <NavLink to="/login">Login</NavLink>
+            <NavLink to="/keyframe">KeyFrame</NavLink>
         </StyledNav>
     );
 };

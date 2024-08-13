@@ -9,6 +9,7 @@ import Inheritance from "./pages/Inheritance";
 import SearchPage from "./pages/SearchPage";
 import LoginPage from "./pages/LoginPage";
 import { createGlobalStyle } from "styled-components";
+import KeyFrame from "./pages/KeyFrame";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -29,6 +30,7 @@ const App = () => {
                 <Route path="/inheritance" element={<Inheritance />} />
                 <Route path="/searchInput" element={<SearchPage />} />
                 <Route path="/login" element={<LoginPage />} />
+                <Route path="/keyframe" element={<KeyFrame />} />
             </Routes>
         </BrowserRouter>
     );
