@@ -10,10 +10,15 @@ import SearchPage from "./pages/SearchPage";
 import LoginPage from "./pages/LoginPage";
 import { createGlobalStyle } from "styled-components";
 import KeyFrame from "./pages/KeyFrame";
+import ThemePage from "./pages/ThemePage";
 
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    background-color: #ffffff;
   }
 `;
 
@@ -31,6 +36,7 @@ const App = () => {
                 <Route path="/searchInput" element={<SearchPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/keyframe" element={<KeyFrame />} />
+                <Route path="/theme" element={<ThemePage />} />
             </Routes>
         </BrowserRouter>
     );

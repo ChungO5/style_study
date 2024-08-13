@@ -27,6 +27,7 @@ const Nav = () => {
             <NavLink to="/searchInput">SearchInput</NavLink>
             <NavLink to="/login">Login</NavLink>
             <NavLink to="/keyframe">KeyFrame</NavLink>
+            <NavLink to="/theme">Theme</NavLink>
         </StyledNav>
     );
 };

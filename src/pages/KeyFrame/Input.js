@@ -8,6 +8,8 @@ const SIZES = {
 };
 
 const StyledInput = styled.input`
+    background-color: ${({ theme }) => theme.backgroundColor};
+    color: ${({ theme }) => theme.color};
     font-size: ${({ size }) => SIZES[size] ?? SIZES["medium"]}px;
     border: 2px solid ${({ error }) => (error ? `#f44336` : `#eeeeee`)};
     border-radius: ${({ round }) => (round ? `9999px` : `4px`)};
@@ -42,7 +44,6 @@ const rotate = keyframes`
 const Container = styled.div`
     width: fit-content;
     position: relative;
-
     ${Spinner} {
         position: absolute;
         top: calc(50% - 8px);
