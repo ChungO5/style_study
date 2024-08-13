@@ -5,6 +5,8 @@ import Nav from "./components/Nav";
 import Form from "./pages/Form";
 import Dynamic from "./pages/Dynamic";
 import InputComponent from "./pages/InputComponent";
+import Inheritance from "./pages/Inheritance";
+import SearchPage from "./pages/SearchPage";
 
 const App = () => {
     return (
@@ -15,6 +17,8 @@ const App = () => {
                 <Route path="/form" element={<Form />} />
                 <Route path="/dynamic" element={<Dynamic />} />
                 <Route path="/input" element={<InputComponent />} />
+                <Route path="/inheritance" element={<Inheritance />} />
+                <Route path="/searchInput" element={<SearchPage />} />
             </Routes>
         </BrowserRouter>
     );

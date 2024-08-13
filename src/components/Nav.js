@@ -1,14 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledNav = styled.div`
+    display: flex;
+    gap: 20px;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+        &.active {
+            color: #4693e8;
+        }
+    }
+`;
 
 const Nav = () => {
     return (
-        <div>
-            <Link to="/hellostyled">HelloSytled</Link>
-            <Link to="/form">form</Link>
-            <Link to="/dynamic">dynamic</Link>
-            <Link to="/input">input</Link>
-        </div>
+        <StyledNav>
+            <NavLink to="/hellostyled">HelloSytled</NavLink>
+            <NavLink to="/form">Form</NavLink>
+            <NavLink to="/dynamic">Dynamic</NavLink>
+            <NavLink to="/input">Input</NavLink>
+            <NavLink to="/inheritance">Inheritance</NavLink>
+            <NavLink to="/searchInput">SearchInput</NavLink>
+        </StyledNav>
     );
 };
 
