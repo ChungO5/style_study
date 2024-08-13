@@ -8,10 +8,18 @@ import InputComponent from "./pages/InputComponent";
 import Inheritance from "./pages/Inheritance";
 import SearchPage from "./pages/SearchPage";
 import LoginPage from "./pages/LoginPage";
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+`;
 
 const App = () => {
     return (
         <BrowserRouter>
+            <GlobalStyle />
             <Nav />
             <Routes>
                 <Route path="/hellostyled" element={<HelloSytled />} />
