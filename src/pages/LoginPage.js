@@ -22,7 +22,7 @@ const LoginPage = () => {
                 <Logo />
                 <Input text="이메일">이메일</Input>
                 <Input text="비밀번호">비밀번호</Input>
-                <Button>로그인 하기</Button>
+                <Button loading>로그인 하기</Button>
                 <KakaoButton>카카오 로그인</KakaoButton>
             </form>
         </Container>

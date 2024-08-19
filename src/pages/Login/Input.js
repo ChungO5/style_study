@@ -6,6 +6,8 @@ const Label = styled.label`
 `;
 
 const StyledInput = styled.input`
+    background-color: ${({ theme }) => theme.backgroundColor};
+    color: ${({ theme }) => theme.color};
     border: none;
     display: block;
     outline: none;
